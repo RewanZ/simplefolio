@@ -42,23 +42,12 @@
 <body>
 <div id="top"></div>
 
-<!-- **** Hero Section **** -->
-<section id="hero" class="jumbotron">
-  <div class="container">
-    <h1 class="hero-title load-hidden">
-      Bonjour, je suis <span class="text-color-main">Rewan</span>
-      <br />
-      Je suis développeur.
-    </h1>
 
-  </div>
-</section>
-<!-- /END Hero Section -->
 
 <!-- **** About Section **** -->
 <section id="about">
   <div class="container">
-    <h2 class="section-title load-hidden">Qui suis-je</h2>
+    <h2 class="section-title load-hidden">Mes tâches :</h2>
     <div class="row about-wrapper">
       <div class="col-md-6 col-sm-12">
         <div class="about-wrapper__image load-hidden">
@@ -67,7 +56,7 @@
                   class="img-fluid rounded shadow-lg"
                   height="auto"
                   width="300px"
-                  src="assets/dev.jpg"
+                  src="assets/compta.png"
                   alt="Profile Image"
           />
         </div>
@@ -75,27 +64,11 @@
       <div class="col-md-6 col-sm-12">
         <div class="about-wrapper__info load-hidden">
           <p class="about-wrapper__info-text">
-            Etudiant en BTS SIO option SLAM en alternance à l'INRIA. Actuellement en deuxième année à l'ORT, ma passion pour le développement informatique se concrétise au sein d'un environnement dynamique et innovant. Explorez mon portfolio pour découvrir mes projets et compétences.
+Mes tâches en entreprise consistent en l'automatisation du traitement de la donnée. En général, je dois récupérer les données de fiches Excel et procéder à des vérifications de sécurité ainsi que de cohérence et d'intégrité des données.
+              Ces vérifications se réalisent en 3 étapes : La vérification de l'activation du Virtual Private Network (VPN) de l'entreprise, la recherche de scripts malveillants et la vérification de la cohérence des données saisie au niveau de la comptabilité.
+         Pour la réalisation de ces tâches, j'ai été ammené à utilsier SQLalchemy, un Operational Ressource Management (ORM) ainsi que les bibliothèques openpyxl et subprocess.
           </p>
-          <p class="about-wrapper__info-text">
-            Mes objectifs sont d'étudier les systèmes embarqués, domaine qui me passione depuis que j'ai eu la chance d'assister à une conférence à ce sujet à l'institut et je souhaiterai également faire un Volontariat International d'Entreprise (VIE) afin de m'ouvrir sur le monde.
-            J'ai pour passions, l'art, l'histoire et la litérature, raisons pour lesquelles j'ai d'abord fait une première litéraire avant de faire une première économique et social.
-          </p>
-          <span class="d-flex mt-3">
 
-
-            <span class="d-flex mt-3">
-
-               <a
-                       rel="noreferrer"
-                       target="_blank"
-                       class="cta-btn cta-btn--resume"
-                       href="assets/resume.pdf"
-               >
-                   CV
-                </a>
-
-              </span>
         </div>
       </div>
     </div>
@@ -107,28 +80,56 @@
 <section id="projects">
   <div class="container">
     <div class="project-wrapper">
-      <h2 class="section-title dark-blue-text">Mon Parcours</h2>
 
       <!-- Notice: each .row is a project -->
       <div class="row">
         <div class="col-lg-4 col-sm-12">
           <div class="project-wrapper__text load-hidden">
-            <h3 class="project-wrapper__text-title">Mon entreprise : L'Inria</h3>
+            <h3 class="project-wrapper__text-title">VPN</h3>
             <div>
               <p class="mb-4">
-C'est dans ce centre de recherche que j'ai le privilège de faire mon alternance, je suis rattaché au service d’assistance d’administration fonctionnelle et de fonrmation interne (SAAFFI) de la direction du financement et du patrimoie (DAFP) où je dois à la fois développer des applications, assister les utilisateurs et maitriser la comptabilité de l'institut.
-              </p>
+                  Pour des raisons de cybersécurité, afin de s'assurer que l'utilisateur est bien un employé de l'Inria et afin de faciliter le retraçage des actions, l'utilisateur doit être connecté au VPN Inria afin de pouvoir saisir des données.              </p>
             </div>
 
             </a>
-            <a
-                    rel="noreferrer"
-                    target="_blank"
-                    class="cta-btn text-color-main"
-                    href="pageMission.html"
-            >
-              Voir missions
+          </div>
+        </div>
+        <div class="col-lg-8 col-sm-12">
+          <div class="project-wrapper__image load-hidden">
+            <a rel="noreferrer" href="#!" target="_blank">
+              <div
+                      data-tilt
+                      data-tilt-max="4"
+                      data-tilt-glare="true"
+                      data-tilt-max-glare="0.5"
+                      class="thumbnail rounded js-tilt"
+              >
+                <img
+                        alt="Project Image"
+                        class="img-fluid"
+                        src="assets/fonction_vpn.png"
+                />
+              </div>
             </a>
+          </div>
+        </div>
+      </div>
+      <!-- /END Project -->
+
+
+
+
+      <!-- Notice: each .row is a project -->
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <div class="project-wrapper__text load-hidden">
+            <h3 class="project-wrapper__text-title">Scripts Malveillants</h3>
+            <div>
+              <p class="mb-4">
+Comme les données saisies dans le fichier Excel seront directement envoyées dans la base de donnée de l'institut, il est primordial de vérifier qu'aucun script malveillant n'ait été saisi au préalable dans le fichier Excel.
+              </p>
+            </div>
+
           </div>
         </div>
         <div class="col-lg-8 col-sm-12">
@@ -144,7 +145,7 @@ C'est dans ce centre de recherche que j'ai le privilège de faire mon alternance
                 <img
                         alt="Project Image"
                         class="img-fluid"
-                        src="assets/inria.png"
+                        src="assets/script.png"
                 />
               </div>
             </a> -->
@@ -153,91 +154,74 @@ C'est dans ce centre de recherche que j'ai le privilège de faire mon alternance
       </div>
       <!-- /END Project -->
 
-      <!-- Notice: each .row is a project -->
-      <div class="row">
-        <div class="col-lg-4 col-sm-12">
-          <div class="project-wrapper__text load-hidden">
-            <h3 class="project-wrapper__text-title">Ecole ORT Montreuil</h3>
-            <div>
-              <p class="mb-4">
-                L'ORT Montreuil est un établissement d'enseignement supérieur situé à Montreuil, France, offrant des formations dans le domaine de l'informatique, du management, et de la communication. Reconnue pour son engagement envers l'excellence académique, l'ORT Montreuil se distingue par son approche dynamique et ses programmes axés sur les besoins du marché. En tant qu'étudiant de l'ORT, je bénéficie d'un environnement propice à l'apprentissage et au développement de compétences professionnelles.
-              </p>
-            </div>
 
 
-            <a
-                    rel="noreferrer"
-                    target="_blank"
-                    class="cta-btn text-color-main"
-                    href=pageORT.html
-            >
-              Voir projets
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-8 col-sm-12">
-          <div class="project-wrapper__image load-hidden">
 
-              <div
-                      data-tilt
-                      data-tilt-max="4"
-                      data-tilt-glare="true"
-                      data-tilt-max-glare="0.5"
-                      class="thumbnail rounded js-tilt"
-              >
-                <img
-                        alt="Project Image"
-                        class="img-fluid"
-                        src="assets/ort.jpg"
-                />
-              </div>
-            </a> -->
-          </div>
-        </div>
-      </div>
-      <!-- /END Project -->
+
+
+
 
       <!-- Notice: each .row is a project -->
       <div class="row">
         <div class="col-lg-4 col-sm-12">
           <div class="project-wrapper__text load-hidden">
-            <h3 class="project-wrapper__text-title">Projets personnels</h3>
+            <h3 class="project-wrapper__text-title">Intégrité des données</h3>
             <div>
               <p class="mb-4">
-                J'ai également réalisé quelques projets personnels sur mon temps libre, notamment sur les systèmes embarqués.
-
+Tout d'abord, il faut vérifier qu'un même objet ne puisse être créé plusieurs fois. Ensuite, il faut vérifier que sa nature budgétaire et en cohérence avec son type budgétaire : C'est à dire qu'un élément ne peut par exemple pas être de type dépense et profit à la fois.
               </p>
             </div>
 
-
-
-            <a
-                    rel="noreferrer"
-                    target="_blank"
-                    class="cta-btn text-color-main"
-                    href="PageProjetsPerso.html"
-            >
-              Voir projet
             </a>
           </div>
         </div>
         <div class="col-lg-8 col-sm-12">
           <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                          data-tilt
+                          data-tilt-max="4"
+                          data-tilt-glare="true"
+                          data-tilt-max-glare="0.5"
+                          class="thumbnail rounded js-tilt"
+                  >
+                      <img
+                              alt="Project Image"
+                              class="img-fluid"
+                              src="assets/coherencetypes.png"
+                      />
+                  </div>
+              </a>
 
-              <div
-                      data-tilt
-                      data-tilt-max="4"
-                      data-tilt-glare="true"
-                      data-tilt-max-glare="0.5"
-                      class="thumbnail rounded js-tilt"
-              >
-                <img
-                        alt="Project Image"
-                        class="img-fluid"
-                        src="assets/code.jpg"
-                />
+
+
+
+
+              <div>
+                  <p class="mb-4">
+
+                     Voici un exemple de réponse que l'utilsiateur peut recevoir.
+
+
+
               </div>
-            </a> -->
+
+
+              <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                          data-tilt
+                          data-tilt-max="4"
+                          data-tilt-glare="true"
+                          data-tilt-max-glare="0.5"
+                          class="thumbnail rounded js-tilt"
+                  >
+                      <img
+                              alt="Project Image"
+                              class="img-fluid"
+                              src="assets/message.png"
+                      />
+                  </div>
+              </a>
           </div>
         </div>
       </div>
@@ -246,20 +230,6 @@ C'est dans ce centre de recherche que j'ai le privilège de faire mon alternance
   </div>
 </section>
 <!-- /END Projects Section -->
-
-
-
-<!-- **** Footer Section **** -->
-<footer class="footer navbar-static-bottom">
-  <div class="container">
-    <a rel="noreferrer" href="#top" class="back-to-top">
-      <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-    </a>
-
-    </div>
-
-    <hr />
-
 
 
 
